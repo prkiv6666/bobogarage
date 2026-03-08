@@ -154,6 +154,9 @@ export default function App() {
             <a href="#contact" className="transition hover:text-[#D4AF37]">
               Контакт
             </a>
+            <a href="#location" className="transition hover:text-[#D4AF37]">
+  Къде да ни намерите
+</a>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -300,7 +303,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="border-y border-[#D4AF37]/10 bg-[#0a0a0a]">
+      <section id="services" className="border-y border-[#D4AF37]/10 bg-[#0a0a0a]">
         <div className="mx-auto max-w-7xl px-4 py-20">
           <div className="mb-12 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Цени</p>
@@ -718,7 +721,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="border-y border-[#D4AF37]/10 bg-[#0a0a0a]">
+<section id="location" className="border-y border-[#D4AF37]/10 bg-[#0a0a0a]">
         <div className="mx-auto max-w-7xl px-4 py-20">
           <div className="mb-12 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Локация</p>
@@ -778,6 +781,12 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-[#D4AF37]/10 bg-black">
+  <div className="mx-auto max-w-7xl px-4 py-6 text-center text-sm text-white/50">
+    © {new Date().getFullYear()} BOBO GARAGE DETAILING. Всички права запазени.
+  </div>
+</footer>
 
       <a
         href={`https://wa.me/${whatsappNumber}`}
